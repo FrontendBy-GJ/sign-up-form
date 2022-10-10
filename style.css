@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+label,
+input,
+button {
+  display: block;
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'side main';
+}
+aside {
+  grid-area: side;
+  position: relative;
+}
+aside img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+aside .logo {
+  position: absolute;
+  width: 100%;
+  top: 220px;
+  background-color: rgb(0 0 0 /0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+aside .logo img {
+  width: 100px;
+  height: 120px;
+  object-fit: contain;
+}
+aside .title {
+  color: white;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 4rem;
+}
+aside .creator {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  color: white;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+.creator a {
+  color: white;
+}
+main {
+  grid-area: main;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9fafb;
+
+  display: flex;
+  flex-direction: column;
+}
+main section {
+  width: 600px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  margin-left: 50px;
+  margin-top: 170px;
+  margin-bottom: 65px;
+}
+main section span {
+  display: block;
+  margin-top: 20px;
+}
+form {
+  background-color: #fff;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px 50px 30px 50px;
+}
+form .heading {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #2d3643;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+input {
+  width: 220px;
+  padding: 3px 10px;
+}
+form ul {
+  display: flex;
+}
+li + li {
+  margin-left: 70px;
+}
+ul + ul {
+  margin-top: 20px;
+}
+
+.account {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+button {
+  background-color: #586b47;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 40px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.account a {
+  color: #586b47;
+  font-weight: bold;
+  text-decoration: none;
+}
