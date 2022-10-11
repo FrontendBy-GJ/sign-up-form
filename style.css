@@ -152,3 +152,17 @@ button:active {
   font-weight: bold;
   text-decoration: none;
 }
+
+/* if password input fields do not match */
+.error {
+  visibility: hidden;
+  position: relative;
+}
+.error::after {
+  position: absolute;
+  content: '* Passwords do NOT match!';
+  color: red;
+  font-size: 0.8rem;
+  width: max-content;
+  bottom: -20px;
+}
